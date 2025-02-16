@@ -5,13 +5,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-<div>
-  <WelcomeMessage/>
-</div>
-  )
+  const App = () => {
+    return (
+      <div>
+        <WelcomeMessage />  {/* Include the WelcomeMessage component here */}
+      </div>
+    );
+  }
 }
 
 export default App
