@@ -10,11 +10,9 @@ import Footer from './components/Footer';
         <Header />
         <MainContent />
         <Footer />
-    
       </div>
     );
   }
-
 
 
 import React from 'react';
@@ -45,5 +43,6 @@ return (
   </div>
 );
 }
+
 export default App;
 
