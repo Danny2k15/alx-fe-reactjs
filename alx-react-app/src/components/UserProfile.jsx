@@ -1,4 +1,3 @@
-import React from 'react';
 function UserProfile(props) {
     return (
       <div>
@@ -7,9 +6,7 @@ function UserProfile(props) {
         <p>Bio: {props.bio}</p>
       </div>
     )
-  }
-
-  import React from 'react';
+}
   import UserProfile from './componennts/UserProfile'; 
 
   function App(){
@@ -19,11 +16,6 @@ function UserProfile(props) {
             name="Alice"
             age="25"
             bio="Loves hiking and photography"
-            />
-            <UserProfile
-            name="Bob"
-            age="30"
-            bio="Enjoys coding and gaming"
             />
         </div>
     )
