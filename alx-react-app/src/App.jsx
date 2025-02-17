@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
@@ -15,8 +14,7 @@ import Footer from './components/Footer';
   }
 
 
-import React from 'react';
-import WelcomeMessage from'./WelcomeMessage'; //Correct path same directory
+import WelcomeMessage from'./components/WelcomeMessage'; //Correct path same directory
 
 function App() {
   return (
@@ -27,8 +25,6 @@ function App() {
   );
 }
 
-
-import React from 'react';
 import UserProfile from'./components/UserProfile';//Or'./UserProfile' if in same directory
 
 function App() {
