@@ -28,17 +28,15 @@ function App() {
 import UserProfile from'./components/UserProfile';//Or'./UserProfile' if in same directory
 
 function App() {
-return (
-  <div>
-    <UserProfile
-    name="Alice"
-    age="25"
-    bio="Loves hiking and photograhy"
-    />
-    {/*...other UserPeofile components or other content...*/}
-  </div>
-);
+  return (
+    <div>
+      <UserProfile
+      name="Alice"
+      age="25"
+      bio="Loves hiking and photography"
+      />    
+      </div>
+  );
 }
-
 export default App;
 
