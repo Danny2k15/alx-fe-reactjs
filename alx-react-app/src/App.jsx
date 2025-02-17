@@ -16,4 +16,4 @@ import Footer from './Footer';
     );
   }
 
-export default App
+export default App()
