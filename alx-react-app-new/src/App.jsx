@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import Counter from './components/Counter';
 
 
   function App (){
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
         <Header />
         <MainContent />
         <Footer />
+        <Counter />
       </div>
     );
   }
