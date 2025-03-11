@@ -10,7 +10,27 @@ function UserProfile(props) {
       </div>
     )
 }
-  import UserProfile from './componennts/UserProfile'; 
+import React, { useContext } from 'react';
+import UserContext from '../context/UserContext';
+
+function UserProfile() {
+  const { user, setUser } = useContext(UserContext);
+
+  if (!user) {
+    return <div>Loading...</div>; // Or handle the case where the user is not available
+  }
+
+  return (
+    <div>
+      <h1>Welcome, {user.name}!</h1>
+      <p>Email: {user.email}</p>
+      {/* ... other user profile details */}
+    </div>
+  );
+}
+
+
+  import UserProfile from './components/UserProfile'; 
 
   function App(){
     return (
