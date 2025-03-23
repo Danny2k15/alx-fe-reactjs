@@ -23,8 +23,6 @@ function Contact() {
         onSubmit={handleSubmit}
         style={{ display: "flex", flexDirection: "column", gap: "10px" }}
       >
-        {/* ... form elements with individual styles if needed */}
-
         <input
           type="text"
           name="name"
