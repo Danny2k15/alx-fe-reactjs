@@ -11,6 +11,9 @@ function Navbar() {
         justifyContent: "center",
         alignItems: "center",
         gap: "20px",
+        backgroundColor: "blue",
+        color: "white",
+        fontWeight: "normal",
       }}
     >
       <Link to="/" style={{ margin: "10px", color: "white" }}>
