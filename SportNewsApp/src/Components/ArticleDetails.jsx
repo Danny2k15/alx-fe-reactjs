@@ -9,7 +9,7 @@ const Articledetails = ({ article }) => {
       />
       <p>
         {" "}
-        <strong>Author:</strong> {articlr.author || "Unknown"}
+        <strong>Author:</strong> {article.author || "Unknown"}
       </p>
       <p>
         {" "}
