@@ -1,8 +1,23 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchBar from "./Components/SearchBar";
+import ArticleDetails from "./Components/ArticleDetails";
+import NewsList from "./Components/NewsList";
+import NewsCard from ",/Components/NewsCard";
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-4">
-      <h1>Hello, Tailwind CSS!</h1>
-    </div>
+    <Router>
+      <div className="SportNewsApp">
+        <SearchBar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<NewsList />} />
+            <Route path="/article:id" element={<ArticleDetails />} />\
+            <Route path="/card" element={<NewsCard />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
