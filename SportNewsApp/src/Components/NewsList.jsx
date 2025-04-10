@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import cookie from "cookie";
 
 const API_KEY = "x6KqhYBbPbdWW2R13q2gNhmWqOvcB6Dm";
 
@@ -12,9 +13,19 @@ const NewsList = () => {
   const newsUrl = `https://api.thenewsapi.com/v1/news/sports?_token=${API_KEY}&locale=us`;
 
   useEffect(() => {
+    const parsedCookies = cookie.parse(document.cookie);
+
+    const authToken = parsedCookies.authToken;
+
+    console.log(authToken);
+
     const fetchArticles = async () => {
       try {
-        const response = await axios.get(newsUrl);
+        const response = await axios.get(newsUrl, {
+          headers: {
+            Authorization: `Bearer ${authToken}`, // If the API requires the authToken
+          },
+        });
         setArticles(response.data.articles);
         setLoading(false);
       } catch (err) {
@@ -22,6 +33,7 @@ const NewsList = () => {
         setLoading(false);
       }
     };
+
     fetchArticles();
   }, []);
   if (loading)
