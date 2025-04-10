@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-const ArticleDetails = ({ article }) => {
+const ArticleDetails = () => {
   const { state } = useLocation();
   const article = state?.article;
 
