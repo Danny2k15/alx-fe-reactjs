@@ -7,7 +7,7 @@ import ArticleDetails from "./Components/ArticleDetails"
 import NewsList from "./Components/NewsList"
 import NewsCard from "./Components/NewsCard"
 import Footer from "./Components/Footer"
-import Navbar from "./Components/Navbar"
+import NavBar from "./Components/Navbar"
 
 function App() {
   const [category, setCategory] = useState("all")
@@ -28,7 +28,7 @@ function App() {
           <div className="max-w-6xl mx-auto p-4">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <h1 className="text-2xl font-bold mb-2 md:mb-0">Sports News App</h1>
-              <Navbar />
+              <NavBar />
             </div>
           </div>
         </header>
