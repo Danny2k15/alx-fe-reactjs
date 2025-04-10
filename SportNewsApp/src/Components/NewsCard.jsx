@@ -9,9 +9,9 @@ const NewsCard = ({ article, onClick }) => {
         alt={article.title}
         className="w-full h-48 object-cover rounded"
       />
-      <h3 className="text-xl font-italics mt-2">{article.title}</h3>
+      <h3 className="text-xl font-italic mt-2">{article.title}</h3>
       <p className="text-sm mt-2">{article.description}</p>
-      <p className="text-xs text-black-500 mt-2">
+      <p className="text-xs text-black mt-2">
         {new Date(article.publishedAt).toLocaleString()}
       </p>
     </div>
