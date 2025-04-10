@@ -1,10 +1,8 @@
-const { defaultServerConditions } = require("vite");
-
 import React from "react";
 
 const SearchBar = ({ searchQuery }) => {
   return (
-    <div className="flex flex-col smp-4">
+    <div className="flex flex-col sm:p-4">
       <input
         type="text"
         value={searchQuery}

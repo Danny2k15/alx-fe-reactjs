@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+const API_KEY = "x6KqhYBbPbdWW2R13q2gNhmWqOvcB6Dm";
+
 const NewsList = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const newsUrl = `https://api.thenewsapi.com/v1/news/sports?_token=${API_KEY}&locale=us`;
 
   useEffect(() => {
     const fetchArticles = async () => {
