@@ -7,7 +7,7 @@ import ArticleDetails from "./Components/ArticleDetails"
 import NewsList from "./Components/NewsList"
 import NewsCard from "./Components/NewsCard"
 import Footer from "./Components/Footer"
-import NavBar from "./Components/Navbar"
+import NavBar from "./Components/NavBar"
 
 function App() {
   const [category, setCategory] = useState("all")
