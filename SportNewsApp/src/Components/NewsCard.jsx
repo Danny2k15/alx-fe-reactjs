@@ -17,3 +17,5 @@ const NewsCard = ({ article, onClick }) => {
     </div>
   );
 };
+
+export default NewsCard;
