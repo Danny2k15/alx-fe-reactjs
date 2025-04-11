@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: process.env.VITE_BASE_PATH || "/react-vite-deploy",
   optimizeDeps: {
-    exclude: ["react-router-dom", "axios"],
+  include: ['react-router-dom', 'axios', 'react-router'],
   },
   build: {
     rollupOptions: {
