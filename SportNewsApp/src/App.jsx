@@ -55,18 +55,8 @@ function App() {
               </Routes>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white p-4 rounded-lg shadow">
-                <h2 className="text-xl font-bold mb-4 text-blue-800">Trending</h2>
-                <Trending />
-              </div>
-
-              <div className="bg-white p-4 rounded-lg shadow">
-                <h2 className="text-xl font-bold mb-4 text-blue-800">Live Scores</h2>
-                <LiveScores />
-              </div>
-            </div>
-          </div>
+           
+              </div>  
         </main>
 
         <Footer />
