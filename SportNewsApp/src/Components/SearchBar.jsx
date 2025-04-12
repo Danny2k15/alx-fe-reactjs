@@ -1,6 +1,10 @@
 import React from "react";
 
-const SearchBar = ({ searchQuery }) => {
+const SearchBar = ({ searchQuery, onSearch }) => {
+  const handleInputChange = (e) => {
+    onSearch(e.target.value);
+  };
+
   return (
     <div className="flex flex-col sm:p-4">
       <input

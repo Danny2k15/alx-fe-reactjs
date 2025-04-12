@@ -13,9 +13,9 @@ const NewsList = () => {
   const newsUrl = `https://api.thenewsapi.com/v1/news/sports?_token=${API_KEY}&locale=us`;
 
   useEffect(() => {
-    const parsedCookies = cookie.parse(document.cookie);
+    const parsedCookies = cookie?.parse(document.cookie);
 
-    const authToken = parsedCookies.authToken;
+    const authToken = parsedCookies?.authToken;
 
     console.log(authToken);
 
@@ -23,10 +23,10 @@ const NewsList = () => {
       try {
         const response = await axios.get(newsUrl, {
           headers: {
-            Authorization: `Bearer ${authToken}`, // If the API requires the authToken
+            Authorization: `Bearer ${authToken}`,
           },
         });
-        setArticles(response.data.articles);
+        setArticles(response?.data?.articles);
         setLoading(false);
       } catch (err) {
         setError("Failed to load news");
@@ -36,13 +36,14 @@ const NewsList = () => {
 
     fetchArticles();
   }, []);
+
   if (loading)
     return <div className="text-center text-harsh-500">loading...</div>;
   if (error) return <div className="text-center text-black 500">{error}</div>;
 
   return (
     <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {articles.map((article) => (
+      {articles?.map((article) => (
         <div
           key={article.url}
           className="bg-white shadow-lg rounded-lg overflow-hidden"
@@ -59,7 +60,7 @@ const NewsList = () => {
             <p className="text-sm text-gray-600 mt-2">{article.description}</p>
             <div className="mt-4">
               <Link
-                to={`/article/${encodeURIComponent(article.url)}`} // Assuming you're using React Router to show article details
+                to={`/article/${encodeURIComponent(article.url)}`}
                 className="text-blue-500 hover:text-blue-700"
               >
                 Read more

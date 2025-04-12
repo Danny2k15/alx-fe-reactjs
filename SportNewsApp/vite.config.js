@@ -4,9 +4,8 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || "/react-vite-deploy",
   optimizeDeps: {
-  include: ['react-router-dom', 'axios', 'react-router'],
+    include: ["react-router-dom", "axios", "react-router"],
   },
   build: {
     rollupOptions: {
