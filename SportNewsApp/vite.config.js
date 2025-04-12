@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/sportsnewsapp/",
+  base: "/",
   optimizeDeps: {
     include: ["react-router-dom", "axios", "react-router"],
   },
