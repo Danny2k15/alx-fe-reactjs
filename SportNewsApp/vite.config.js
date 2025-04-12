@@ -8,8 +8,6 @@ export default defineConfig({
     include: ["react-router-dom", "axios", "react-router"],
   },
   build: {
-    rollupOptions: {
-      input: path.resolve(__dirname, "index.html"),
-    },
+    outDir: "dist",
   },
 });
