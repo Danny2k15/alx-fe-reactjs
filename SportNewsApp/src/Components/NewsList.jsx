@@ -10,8 +10,7 @@ const NewsList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const newsUrl = https;
-  `//api.thenewsapi.com/v1/news/all?_token=${API_KEY}&locale=us`;
+  const newsUrl = `https;//api.thenewsapi.com/v1/news/all?_token=${API_KEY}&locale=us`;
 
   useEffect(() => {
     const parsedCookies = cookie?.parse(document.cookie);
