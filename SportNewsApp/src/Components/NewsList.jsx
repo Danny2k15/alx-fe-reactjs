@@ -3,14 +3,15 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import cookie from "cookie";
 
-const API_KEY = "x6KqhYBbPbdWW2R13q2gNhmWqOvcB6Dm";
+const API_KEY = "xx6KqhYBbPbdWW2R13q2gNhmWqOvcB6DmQjuTLhMa";
 
 const NewsList = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const newsUrl = `https://api.thenewsapi.com/v1/news/sports?_token=${API_KEY}&locale=us`;
+  const newsUrl = https;
+  `//api.thenewsapi.com/v1/news/all?_token=${API_KEY}&locale=us`;
 
   useEffect(() => {
     const parsedCookies = cookie?.parse(document.cookie);
